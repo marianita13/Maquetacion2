@@ -25,10 +25,10 @@ main{
     align-items: center;
 }
 .container{
-    height: 540px;
+    height: 544px;
     width: 329px;
     background-color: var(--Verydarkblue2);
-    padding: 22px 24px;
+    padding: 24px 24px;
     border-radius: 12px;
 }
 .container_image{
@@ -39,21 +39,125 @@ main{
     background-position: 70%;
     border-radius: 9px;
 }
+.hover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(178, 100%, 50%, 0.205);
+    visibility: hidden;
+}
+
+.container_image:hover .hover{
+    visibility: visible;
+}
 .container_tittle{
     color: var(--White);
-    padding-top: 30px;
+    padding-top: 29px;
     font-family: 'Outfit', sans-serif;
+    font-weight: 600;
     font-size: 22px;
-    padding-bottom: 19px;
+    padding-bottom: 17px;
+}
+.container_tittle:hover{
+    color: var(--Cyan);
 }
 .container_text{
     color: var(--Softblue);
-    font-size: 18px;
-    padding-bottom: 19px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
 }
 .container_iconos{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 14px;
+}
+.container_punto1{
+    display: flex;
+    gap: 8px;
+}
+.icono1{
+    background-image: url(./images/icon-ethereum.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 11px;
+}
+.text1{
+    color: var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+}
+.container_punto2{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.icono2{
+    background-image: url(./images/icon-clock.svg);
+    background-size: cover;
+    height: 17px;
+    width: 17px;
+}
+.text2{
+    color: var(--Softblue);
+    font-family: 'Outfit', sans-serif;
+}
+hr{
+    background-color: var(--Softblue);
+    height: 1px;
+    border: none;
+    opacity:30% ;
+}
+.creacion{
+    display: flex;
+    padding-top: 14px;
+    align-items: center;
+}
+.container_image2{
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    border-radius: 150px;
+    border: solid var(--White) 1px;
+    height: 34px;
+    width: 34px;
+    margin-right: 15px;
+}
+.text3{
+    color: var(--Softblue);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    margin: 5px;
+}
+.text4{
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+.text4:hover{
+    color: var(--Cyan);
+}
+@media (min-width:1440px){
+    .container{
+        height: 598px;
+        width: 329px;
+    }
+    .container_image{
+        width: 100%;
+        height: 304px;
+    }
+    .container_tittle{
+        padding-bottom: 22px;
+    }
+    .container_text{
+        padding-bottom: 25px;
+    }
+    .container_iconos{
+        padding-bottom: 20px;
+    }
 }
 
 .attribution{
